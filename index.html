@@ -7,33 +7,41 @@
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <header>
-        <h1>Calculadora para tipo sanguíneo</h1>        
+    <header class="container mt-5">
+        <h1 class="text-info">Calculadora para tipo sanguíneo</h1>        
     </header>
-    <section>
+    <section class="container mt-3">
         <p>No final do século XIX, o médico imunologista, biólogo e pesquisador austríaco Karl Landsteiner descobriu que, ao misturar determinados tipos de sangue, as hemácias de aglomeravam, formando um coágulo.</p>
         <p>O tipo sanguíneo é uma característica determinada por genes e herdada dos pais. Existem 8 tipos de sangue (A, AB, B e O, que podem ser negativos ou positivos), classificados conforme a presença ou ausência de certas proteínas e antígenos existentes nas células vermelhas do sangue.</p>
         <p>A melhor maneira de saber se o seu sangue é A, B, AB ou O, assim como o fator Rh, é por meio do exame de tipagem sanguínea. É um teste simples, que pode ser solicitado pelos médicos, incluindo clínicos gerais, a qualquer momento da vida.</p>
         <p>No entanto, através do tipo sanguíneo do pai e da mãe, é possível determinar os possíveis tipos de sangue que o bebê pode ter quando nascer. Aqui está uma calculadora que apresenta a estimativa da tipologia sanguinea</p>
     </section>
-    <section>
+    <section class="container mt-5">
         <form>
-            <ul>
-                <li>
-                    <label for="">Tipo de sangue da mãe</label>
-                    <input type="text">
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <label for="">Tipo de sangue do pai</label>
-                    <input type="text">
-                </li>
-            </ul>
+            <div class="d-flex align-items-center mb-3">
+                <label for="sangue-mae" class="me-2">Tipo de sangue da mãe:</label>
+                <select id="sangue-mae" name="sangueMae" class="form-control w-auto">
+                    <option value="A">--</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="O">O</option>
+                    <option value="AB">AB</option>
+                </select>      
+            </div>
+            <div class="d-flex align-items-center mb-3"></div>
+                <label for="sangue-mae" class="me-2">Tipo de sangue da pai:</label>
+                <select id="sangue-mae" name="sangueMae" class="form-control w-auto">
+                    <option value="A">--</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="O">O</option>
+                    <option value="AB">AB</option>
+                </select>
+            </div>
             <button type="button">Calcular</button>
         </form>
     </section>
-    <footer>
+    <footer class="container">
         <h5>Fonte</h5>
         <p>https://www.valesaude.com.br/saude-v/qual-a-importancia-e-como-saber-o-tipo-sanguineo/</p>
     </footer>
